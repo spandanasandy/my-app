@@ -28,7 +28,7 @@ node('master'){
 	         sh "ssh -o StrictHostKeyChecking=no ec2-user@172.31.43.90  ${dockrRm} "
 			 sh "ssh -o StrictHostKeyChecking=no ec2-user@172.31.43.90  ${dockrRmImage} "
 		   }catch(e){
-			  echo "container my-app not found ." 
+			  echo "container my-app not found" 
 		   }
 	   }
 	   
